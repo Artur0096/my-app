@@ -1,0 +1,54 @@
+.posts {
+  padding: 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+  margin: 25px;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 10px 5px 5px gray;
+  background-color: rgb(236, 233, 233);
+}
+.card h3 {
+  font-size: 21px;
+  font-family: cursive;
+  height: 80px;
+}
+
+.card p {
+  font-size: 19px;
+}
+@media screen and (min-width: 1402px) and (max-width: 1840px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1402px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .card h3 {
+    font-size: 15px;
+    font-family: cursive;
+    height: 40px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
